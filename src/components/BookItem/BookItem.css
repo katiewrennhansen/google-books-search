@@ -1,0 +1,12 @@
+.book-item {
+    display: flex;
+    align-items: top;
+}
+
+.image-container {
+    padding-top: 20px;
+}
+
+.book-content {
+    margin-left: 20px;
+}

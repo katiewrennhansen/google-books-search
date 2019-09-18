@@ -7,12 +7,19 @@ class BooksItem extends Component {
     render(){
 
         const book = this.props.book;
+     
 
         return (
             <div className="book-item">
-                <h3>{book.volumeInfo.title}</h3>
-                <p>{book.volumeInfo.publisher}</p>
-                <p>{book.volumeInfo.description}</p>
+                <div className="image-container">
+                    <img src={book.volumeInfo.imageLinks.thumbnail} alt="book" />
+                </div>
+                <div className="book-content">
+                    <h3><a href={book.accessInfo.webReaderLink} target="_blank">{book.volumeInfo.title}</a></h3>
+                    <p><i>{book.volumeInfo.authors}</i></p>
+                    <p>{book.volumeInfo.publisher}</p>
+                    <p>{book.volumeInfo.description}</p>
+                </div>
             </div>
         );
     }

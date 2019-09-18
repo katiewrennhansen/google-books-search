@@ -9,15 +9,17 @@ class BooksList extends Component {
 
         const books = this.props.books.map((item, i) => {
             return (
-                <li className="list-item">
-                    <BookItem book={item} key={i} />
+                <li className="list-item" key={i}>
+                    <BookItem book={item}/>
+                    <hr />
                 </li>
+                
             )
         });
 
         return (
             <div className="books-list">
-                <h2>Books List</h2>
+                <h2>Results</h2>
                 <ul>
                     { books }
                 </ul>

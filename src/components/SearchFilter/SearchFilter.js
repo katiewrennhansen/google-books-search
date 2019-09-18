@@ -6,7 +6,6 @@ class SearchFilter extends Component {
   render(){
     return (
       <div className="search-bar">
-        <h2>Search Bar</h2>
         <Search 
             updateInfo={this.props.updateInfo}
         />
