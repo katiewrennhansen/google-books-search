@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Search.css';
-import { thisExpression } from '@babel/types';
 
 class Search extends Component {
     constructor(props){
